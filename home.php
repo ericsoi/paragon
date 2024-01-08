@@ -55,7 +55,7 @@
                             <div class="card-body">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="mr-3">
-                                        <div class="text-white-75 small">File Charges Today</div>
+                                        <div class="text-white-75 small">Loan Types</div>
                                         <div class="text-lg font-weight-bold">
                                             <?php 
                                             $file_charges = $conn->query("SELECT sum(amount) as total FROM file_charges where date(date_created) = date(CURRENT_DATE)");
@@ -68,7 +68,7 @@
                                 </div>
                             </div>
                             <div class="card-footer d-flex align-items-center justify-content-between">
-                                <a class="small text-white stretched-link" href="index.php?page=file_charges">View File Charges</a>
+                                <a class="small text-white stretched-link" href="loan_type.php?page=file_charges">View Loan Types</a>
                                 <div class="small text-white">
                                     <i class="fas fa-angle-right"></i>
                                 </div>
